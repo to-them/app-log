@@ -1,5 +1,3 @@
-﻿https://stackify.com/log4net-guide-dotnet-logging/
-Also check: https://stackify.com/web-config-customerrors-asp-net/
 
 1. Add log4net Package
 Starting with log4net is as easy as installing a Nuget package. 
@@ -43,7 +41,7 @@ Basic File
 The next thing we need to do is tell log4net where to load it’s configuratin from so that it actually works. 
 I suggest putting this in your AssemblyInfo.cs file. 
 You can find it under the Properties section in your project.
-(Ex: \Log4NetSample2\Properties\AssemblyInfo.cs)
+(Ex: \Log4NetDemo\Properties\AssemblyInfo.cs)
 Add the following to the bottom of your AssemblyInfo file:
 [assembly: log4net.Config.XmlConfigurator(ConfigFile = "log4net.config")]
 
@@ -62,7 +60,7 @@ Now you can modify your app to log something and try it out!
         }
     }
 
->> Log file location: \Log4NetSample2\bin\Debug\myapp.log
+>> EX: Log file default location: \Log4NetDemo\bin\Debug\DemoApp.log
 
 Make Good Use of Multiple Log Levels and Filter by Them
 Be sure to use Debug, Info, Warning, Error, and Fatal logging levels as appropriate within your code. Don’t lot everything as Debug. Be sure to think about how you would be viewing the logs and what you want to see it later when coding your logging statements.
